@@ -2,7 +2,7 @@ import React, {createContext, useContext, useEffect, useReducer} from "react";
 
 const GlobalContext = createContext()
 
-const baseURL = "https://api.jikan.moe/v4"
+export const baseURL = "https://api.jikan.moe/v4"
 
 
 const LOADING = "LOADING"
