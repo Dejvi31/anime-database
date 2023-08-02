@@ -8,11 +8,7 @@ import React, {
 
 const GlobalContext = createContext();
 
-<<<<<<< HEAD
 export const baseURL = "https://api.jikan.moe/v4"
-=======
-const baseURL = "https://api.jikan.moe/v4";
->>>>>>> rei21
 
 const LOADING = "LOADING";
 const SEARCH = "SEARCH";
