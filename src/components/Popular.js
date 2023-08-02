@@ -12,7 +12,8 @@ const Popular = () => {
     }
   }
   return (
-    <div>
+    <div> 
+      <h1>hello</h1>
       <div className='popular-anime'>
         {conditionalRender()}
       </div>

@@ -1,12 +1,13 @@
 import React from 'react'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-import Popular from './components/Popular'
+
+import Homepage from './components/Homepage'
 
 
 const App = () => {
   return (
     <Router>
-      <Popular />
+      <Homepage />
     </Router>
   )
 }
