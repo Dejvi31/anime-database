@@ -2,12 +2,12 @@ import React from 'react'
 import { useGlobalContext } from '../context/global'
 import { Link } from 'react-router-dom'
 
-const Popular = ({rendered}) => {
+const Upcoming = ({rendered}) => {
 
-  const {popularAnime,isSearch,searchResults} = useGlobalContext()
+  const {upcomingAnime,isSearch,searchResults} = useGlobalContext()
   const conditionalRender = () => {
-    if(!isSearch && rendered === 'popular') {
-      return popularAnime.map((anime) => {
+    if(!isSearch && rendered === 'upcoming') {
+      return upcomingAnime.map((anime) => {
         return <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
           <img src={anime.images.jpg.large_image_url} alt="" />
         </Link>
@@ -29,4 +29,4 @@ const Popular = ({rendered}) => {
   )
 }
 
-export default Popular
+export default Upcoming
