@@ -33,6 +33,9 @@ a img {
     object-fit: cover;
     border-radius: 5px;
 }
+a img:hover {
+    transform: scale(1.01)
+}
 
 /* ======================= AnimeItem ===================== */
 
@@ -84,6 +87,9 @@ a img {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 1rem;
+}
+.character:hover {
+    transform: scale(1.01)
 }
 #character-link {
     height: auto;
