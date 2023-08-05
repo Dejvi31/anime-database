@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Popular from "./Popular";
 import { useGlobalContext } from "../context/global";
 import Upcoming from "./Upcoming";
@@ -7,9 +7,7 @@ import Airing from "./Airing";
 const Homepage = () => {
   const { handleSubmit, search, searchAnime, handleChange, getUpcomingAnime, getAiringAnime, getPopularAnime } =
     useGlobalContext();
-  const [rendered, setRendered] = useState("");
-
-
+  const [rendered, setRendered] = useState("popular");
 
   const switchComponent = () => {
     switch (rendered) {
