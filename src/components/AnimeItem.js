@@ -29,14 +29,12 @@ const AnimeItem = () => {
     const response = await fetch(`${baseURL}/anime/${anime}`);
     const data = await response.json();
     setAnime(data.data);
-    console.log(data.data);
   };
 
   const getCharacters = async (anime) => {
     const response = await fetch(`${baseURL}/anime/${anime}/characters`);
     const data = await response.json();
     setCharacters(data.data);
-    console.log(data.data);
   };
 
   useEffect(() => {
@@ -49,7 +47,7 @@ const AnimeItem = () => {
       <div className="details">
         <div className="detail">
           <div className="image">
-            <img src={images?.jpg.large_image_url} alt="" />
+            <img src={images?.jpg?.large_image_url} alt="" />
           </div>
           <div className="anime-details">
             <p>

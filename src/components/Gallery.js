@@ -19,7 +19,10 @@ const Gallery = () => {
   return (
     <div className='gallery'>
         <div className='back'>
-          <Link to="/">Back</Link>
+          <Link to="/">
+            <i className='fas fa-arrow-left'></i>
+            {" "}Back to home
+            </Link>
         </div>
         <div className='big-image'>
           <img src={pictures[index]?.jpg?.image_url} alt="" />

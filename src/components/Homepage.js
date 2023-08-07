@@ -37,7 +37,10 @@ const Homepage = () => {
           <div className="filter-btn popular-filter">
             <button onClick={() => 
               setRendered("popular")
-              }>Popular</button>
+              }>
+                Popular
+                <i className="fas fa-fire"></i>
+                </button>
           </div>
           <form onSubmit={handleSubmit} className="search-form">
             <div className="input-control">
